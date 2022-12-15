@@ -1,0 +1,4 @@
+* the AI allows you to contextualize the information from the demo
+* without the AI, the demo lives in a vacuum. It is hard to generalize anything at all because the demo is very specific to this exact chip. The "conversation" i'm able to have with the AI chatbot allows me to contextualize this information.
+* When i ask "how would you design the FPGA", it does not give me anything close to what the tutorial says to do. It's not even "correct" for my specific problem. It does, however, put the problem of "FPGA design" into a broader context and let me know what other people in the industry MIGHT be doing.
+* The AI doesn't know jack-shit about the actual hardware. It has no idea what a "nandland go board" is. It cannot give me specific instructions about how to get set up with this specific chip. It could, however, have let me know that a mac is probably not the best OS for FPGA dev.
