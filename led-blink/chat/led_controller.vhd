@@ -1,11 +1,17 @@
-entity led_controller is
-  port(
-    switch : in std_logic_vector(3 downto 0);
-    led : out std_logic_vector(3 downto 0)
-  );
-end entity;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
-architecture behavioral of led_controller is
+entity led_control is
+    Port ( switches : in  STD_LOGIC_VECTOR(3 downto 0);
+           leds     : out STD_LOGIC_VECTOR(3 downto 0));
+end led_control;
+
+architecture Behavioral of led_control is
 begin
-  led <= switch;
-end architecture;
+    process(switches)
+    begin
+        for i in switches'range loop
+            leds(i) <= switches(i);
+        end loop;
+    end process;
+end Behavioral;
